@@ -11,7 +11,7 @@ function updateCartCount() {
 function updateWishCount() {
   const wishCount = document.getElementById("wishCount");
   if (wishCount) {
-    wishCount.textContent = wishArray.length; // wishlist sirf unique items hoti hain
+    wishCount.textContent = wishArray.length; 
   }
 }
 
