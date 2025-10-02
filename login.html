@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Tailwind v4 Setup</title>
+</head>
+
+<body>
+
+
+    <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+            <a href="index.html">
+                <h1 class="text-white text-[2rem] text-[] font-bold hover:text-[#1f5ecc]">E-Commerce </h1>
+            </a>
+
+
+        </div>
+
+        <!-- 
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div> -->
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li class="transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105 "><a
+                        href="About.html">About</a>
+                </li>
+
+                <li class="transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"> <a
+                        href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row 2xl:items-center">
+            <div>
+                <a href="icon.html"><i
+                        class="text-white text-[2rem]  fa-solid fa-heart-pulse transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"></i>
+                </a>
+            </div>
+
+            <div>
+
+                <a href="table.html"> <i
+                        class=" text-[white] text-[2rem] fa-solid fa-cart-shopping transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"></i>
+                    </i>
+                </a>
+            </div>
+
+            <a href="dashboard.html"> <button
+                    class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8] p-[0.7rem] pl-[2rem] pr-[2rem] rounded-[0.4rem] transition-all duration-300 hover:bg-[#1f5ecc] hover:scale-105">Admin
+                    Dashboard</button></a>
+
+            <!-- <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i> -->
+            <i
+                class="  text-[white] text-[2rem] transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+
+        </div>
+
+
+
+
+    </header>
+
+    <div class=" flex justify-center items-center  h-[100vh] mx-[1rem] ">
+        <form class="flex flex-col shadow-lg w-[22rem] p-6 py-11  " id="loginForm">
+
+            <label class=" text-sm font-medium text-gray-700 mb-[0.5rem]">Email</label>
+            <input
+                class="px-4 py-2 border rounded:lg w-full rounded-[0.4rem] hover:scale-105  transition-all duration-300 "
+                type=" email" placeholder="Enter email" id="email">
+
+            <label class="text-sm font-medium text-gray-700 mb-[0.5rem] mt-[0.5rem] ">Password</label>
+            <input
+                class="px-4 py-2 border rounded:lg w-full rounded-[0.4rem]hover:text-[#1f5ecc] hover:scale-105  transition-all duration-300"
+                type=" text" placeholder="Enter password" id="password">
+
+            <button
+                class="bg-[blue] p-[14px] text-center hover:bg-[#1f5ecc] hover:scale-105 transition-all duration-300 text-white rounded-sm mt-[1rem]"
+                type=" submit">
+                Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+<script src="form.js"></script>

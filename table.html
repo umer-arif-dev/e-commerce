@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</head>
+
+<body>
+
+
+
+
+    <!-- <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+            <h1 class="text-white text-[2rem] text-[] font-bold">E-Commerce </h1>
+
+
+        </div>
+
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row ">
+            <div>
+                <a href="icon.html"><i class="text-white text-[2rem]  fa-solid fa-heart-pulse"></i> </a>
+
+
+            </div>
+
+            <div>
+
+                <a href="table.html"> <i class=" text-[white] text-[2rem] fa-solid fa-cart-shopping"></i>
+                    </i>
+                </a>
+            </div>
+
+            <a href="dasboard.html"> <button
+                    class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8]  rounded-[0.4rem]">Admin
+
+                    Dashboard</button></a>
+            <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+        </div>
+
+
+
+
+    </header> -->
+
+    <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+          <!-- <a href="index.html"> <h1 class="text-white text-[2rem] text-[] font-bold transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105">E-Commerce </h1>></a> -->
+      <a href="index.html"  >  <h1 class="text-white text-[2rem] text-[] font-bold hover:text-[#1f5ecc] hover:scale-105  ">E-Commerce </h1></a>
+
+
+        </div>
+
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row 2xl:items-center">
+            <!-- <div>
+                <a href="icon.html"><i class="text-white text-[2rem]  fa-solid fa-heart-pulse"></i> </a>
+            </div> -->
+
+            <a href="icon.html" class="relative">
+                <i
+                    class="text-[white] text-[2rem] fa-solid fa-heart-pulse transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"></i>
+                <span id="wishCount"
+                    class="absolute top-[-10px] right-[-10px] bg-red-600 text-white text-[0.8rem] px-[6px] py-[2px] rounded-full">
+                    0
+                </span>
+
+                <div>
+
+                    <!-- <a href="table.html"> <i class=" text-[white] text-[2rem] fa-solid fa-cart-shopping"></i>
+                    </i>
+                </a> -->
+
+                    <a href="table.html" class="relative">
+                        <i
+                            class="text-[white] text-[2rem] fa-solid fa-cart-shopping transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"></i>
+                        <span id="cartCount"
+                            class="absolute top-[-10px] right-[-10px] bg-red-600 text-white text-[0.8rem] px-[6px] py-[2px] rounded-full">
+                            0
+                        </span>
+                    </a>
+
+
+
+
+
+                </div>
+
+                <a href="dashboard.html"> <button
+                        class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8] p-[0.7rem] pl-[2rem] pr-[2rem] rounded-[0.4rem]">Admin
+                        Dashboard</button></a>
+
+                <!-- <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i> -->
+                <i
+                    class="  text-[white] text-[2rem] transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+
+        </div>
+
+
+
+
+    </header>
+
+    <h1 class="text-center  font-bold text-3xl mt-9 ">Your Cart </h1>
+
+    <div class="  shadow-lg p-6 mx-[2rem] bg-white overflow-x-auto ">
+
+
+        <!-- <div class="overflow-x-auto">
+            <table class="  m-auto sm:w-full border border-collapse border-gray-200 mt-[3rem] overflow-x-auto  ">
+
+                <thead>
+                    <tr class="bg-[#d1d5dc]">
+                        <th class=" border border-gray-200  px-4 py-3 ">Image</th>
+                        <th class=" border border-gray-200  px-4 py-3 ">Title</th>
+                        <th class=" border border-gray-200  px-4 py-3  ">Price</th>
+                        <th class=" border border-gray-200  px-4 py-3 ">Quantity</th>
+                        <th class=" border border-gray-200  px-4 py-3 ">Sub Total</th>
+                        <th class=" border border-gray-200  px-4 py-3 ">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="flex justify-center items-center px-4 py-3 border border-gray-200"><img
+                                src="/images//shirt.png " alt="shirt" class="w-16 h-16"> </td>
+                        <td class="px-4 py-2 text-center border border-gray-200">Mens casual Premium</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$22.2</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">3</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$66.90</td>
+
+                        <td class="px-4 py-2 text-center border border-gray-200"><button
+                                class="bg-[#fb2c36] text-white text-center py-1 px-3 rounded">Remove</button></td>
+
+
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex justify-center items-center px-4 py-3 border border-gray-200"><img
+                                src="/images/jacket.png " alt="shirt" class="w-16 h-16"> </td>
+                        <td class="px-4 py-2 text-center border border-gray-200">Mens cotton Jacket</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$55.9</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">1</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$55.9</td>
+
+                        <td class="px-4 py-2 text-center border border-gray-200"><button
+                                class="bg-[#fb2c36] text-white text-center py-1 px-3 rounded">Remove</button></td>
+
+
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex justify-center items-center px-4 py-3 border border-gray-200"><img
+                                src="/images/shirtt.png " alt="shirt" class="w-16 h-16"> </td>
+                        <td class="px-4 py-2 text-center border border-gray-200">Mens casual slim fit</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$15.99</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">1</td>
+                        <td class="px-4 py-2 text-center border border-gray-200">$15.99</td>
+
+                        <td class="px-4 py-2 text-center border border-gray-200"><button
+                                class="bg-[#fb2c36] text-white text-center py-1 px-3 rounded">Remove</button></td>
+
+
+
+
+                    </tr>
+
+
+
+
+                </tbody>
+
+            </Table>
+        </div>
+        <div class=" flex-col md:flex-row md:justify-between  items-center mt-12 flex gap-[1rem]">
+            <h1 class="font-bold text-2xl" id="totalAmount">Total: $138.88
+
+            </h1>
+            <a href="chechout.html"> <button
+                    class="text-center bg-[#155dfc] py-2 px-5 rounded-lg text-white w-full md:w-auto ">checkout</button>
+            </a>
+        </div>
+    </div>
+
+    </div> -->
+
+        <div class="shadow-lg p-6 mx-[2rem] bg-white overflow-x-auto">
+            <div class="overflow-x-auto">
+                <table class="m-auto sm:w-full border border-collapse border-gray-200 mt-[3rem] overflow-x-auto">
+                    <thead>
+                        <tr class="bg-[#d1d5dc]">
+                            <th class="border border-gray-200 px-4 py-3">Image</th>
+                            <th class="border border-gray-200 px-4 py-3">Title</th>
+                            <th class="border border-gray-200 px-4 py-3">Price</th>
+                            <th class="border border-gray-200 px-4 py-3">Quantity</th>
+                            <th class="border border-gray-200 px-4 py-3">Sub Total</th>
+                            <th class="border border-gray-200 px-4 py-3">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- JS yahan data inject karega -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex-col md:flex-row md:justify-between items-center mt-12 flex gap-[1rem]">
+                <h1 class="font-bold text-2xl" id="totalAmount">Total: $0</h1>
+                <a href="chechout.html">
+                    <button
+                        class=" hover:bg-[#1f5ecc] hover:scale-105 transition-all duration-300 text-center bg-[#155dfc] py-2 px-5 rounded-lg text-white w-full md:w-auto">
+                        Checkout
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- JS link -->
+        <script src="table.js"></script>
+
+
+
+    </div>
+
+    <footer class="bg-[#101828] pt-[3rem] mt-[3rem] sm:mt-[19rem] ">
+
+
+
+        <div class="sm:flex sm:justify-evenly  sm:gap-[2rem] sm:flex-wrap  gap-[3rem] ml-[1rem]  ">
+
+            <div class="w-[20rem] mt-[2rem] ">
+                <h1 class="text-2xl text-white  font-bold mb-3 ">E-Commerce
+                </h1>
+                <p class="text-sm text-gray-400  w-[20rem] ">Your one-stop shop for the latest trends in fashion,
+                    electronics,
+                    and
+                    lifestyle.
+                    Shop
+                    smart. Shop
+                    easy.
+
+                </p>
+            </div>
+            <div class="w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-semibold mb-3">Quick Links</h1>
+
+
+                <ul class="text-white flex flex-col gap-[0.5rem]">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Dashboard</li>
+
+
+                </ul>
+            </div>
+
+
+
+
+            <div class="text-white w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-bold mb-3">Customer Service</h1>
+                <ul class="flex flex-col gap-[0.5rem]">
+                    <li>Privacy Policy
+                    </li>
+
+                    <li>Terms & Conditions
+                    </li>
+                    <li>Help & Support</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="w-[20rem] mt-[2rem]">
+                <h3 class="text-2xl text-white  font-semibold mb-4">Contact Us</h3>
+                <ul class="text-white flex flex-col gap-[0.7rem]">
+
+
+                    <li class="flex gap-[0.4rem] items-center"><i class="fa-solid fa-location-dot text-[#155dfc]"></i>
+                        Lahore,Pakistan</li>
+                    <li class="flex items-center gap-[0.4rem]"><i
+                            class="fa-solid fa-envelope text-[#155dfc]"></i>support@gmail.com</li>
+                    <li class="flex items-center gap-[0.4rem]"> <i class="fa-solid fa-phone text-[#155dfc]"></i>+92
+                        124989101
+                    </li>
+
+
+
+
+                    <div class=" flex gap-[0.5rem] mt-[0.5rem] ">
+                        <li><i class="fa-brands fa-facebook text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-instagram text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-twitter text-white text-[1.4rem] "></i></li>
+                        <li><i class="fa-brands fa-github text-white text-[1.4rem]"></i></li>
+
+                    </div>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400 pb-[3rem] ">
+            <p>© 2025 E-Commerce. All rights reserved.</p>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+
+</body>
+<script src="table.js"></script>
+
+</html>

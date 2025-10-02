@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</head>
+
+<body>
+
+    <!-- <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+            <h1 class="text-white text-[2rem] text-[] font-bold">E-Commerce </h1>
+
+
+        </div>
+
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row 2xl:items-center">
+            <div>
+                <a href="icon.html"><i class="text-white text-[2rem]  fa-solid fa-heart-pulse"></i> </a>
+            </div>
+
+            <div>
+
+                <a href="table.html"> <i class=" text-[white] text-[2rem] fa-solid fa-cart-shopping"></i>
+                    </i>
+                </a>
+            </div>
+
+            <a href="dashboard.html"> <button
+                    class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8] p-[0.7rem] pl-[2rem] pr-[2rem] rounded-[0.4rem]">Admin
+                    Dashboard</button></a>
+
+            <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+        </div>
+
+
+
+
+    </header> -->
+    <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+            <a href="index.html"  >  <h1 class="text-white text-[2rem] text-[] font-bold hover:text-[#1f5ecc] hover:scale-105  ">E-Commerce </h1></a>
+
+
+        </div>
+
+        <!-- 
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div> -->
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li class="transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105 "><a
+                        href="About.html">About</a>
+                </li>
+
+                <li class="transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105"> <a
+                        href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row 2xl:items-center">
+            <!-- <div>
+                <a href="icon.html"><i class="text-white text-[2rem]  fa-solid fa-heart-pulse"></i> </a>
+            </div> -->
+
+            <a href="icon.html" class="relative">
+                <i class="text-[white] text-[2rem] fa-solid fa-heart-pulse    hover:text-[red] hover:scale-105"></i>
+                <span id="cartWish"
+                    class="absolute top-[-10px] right-[-10px] bg-red-600 text-white text-[0.8rem] px-[6px] py-[2px] rounded-full">
+                    0
+                </span>
+
+                <div>
+
+                    <!-- <a href="table.html"> <i class=" text-[white] text-[2rem] fa-solid fa-cart-shopping"></i>
+                    </i>
+                </a> -->
+
+                    <a href="table.html" class="relative">
+                        <i
+                            class="text-[white] text-[2rem] fa-solid fa-cart-shopping transition-all duration-300 hover:text-[red] hover:scale-105"></i>
+                        <span id="cartCount"
+                            class="absolute top-[-10px] right-[-10px] bg-red-600 text-white text-[0.8rem] px-[6px] py-[2px] rounded-full">
+                            0
+                        </span>
+                    </a>
+
+
+
+
+
+                </div>
+
+                <a href="dashboard.html"> <button
+                        class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8] p-[0.7rem] pl-[2rem] pr-[2rem] rounded-[0.4rem]">Admin
+                        Dashboard</button></a>
+
+                <!-- <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i> -->
+                <i
+                    class="  text-[white] text-[2rem] transition-all duration-300 hover:text-[red] hover:scale-105  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+
+        </div>
+
+
+
+
+    </header>
+
+
+
+    <div>
+        <h3 class="font-bold text-3xl text-center  mb-9 mt-12">Your Wishlist</h3>
+    </div>
+
+    <div id="wishlistContainer"
+        class="flex flex-wrap  gap-[4rem] sm:gap-[1.4rem] justify-center mt-[4rem]  mb-[4rem] ml-[1rem] mr-[1rem]   ">
+
+
+
+        <div class="w-full  sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem]  bg-white border-gray-600 ">
+            <img src="/images/fan.png" alt="fan" class="pt-[6rem]">
+            <h1 class="text-center text-2xl font-bold">Umer</h1>
+            <p class="text-center text-[blue] text-x mt-2">$300</p>
+            <p class="text-center text-gray-600 mt-2">Css Master</p>
+
+
+            <div class="flex  flex-col gap-[0.8rem] mt-2">
+                <button class=" bg-[#00c950] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+                <button class=" bg-[#e7000b] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem]  bg-white border-gray-600 ">
+            <img src="/images/bag.png" alt="fan" class="">
+            <h1 class="text-center text-2xl font-bold">Fjallraven - Foldsac
+            </h1>
+            <p class="text-center text-[blue] text-x mt-2">$109.95
+
+            </p>
+            <p class="text-center text-gray-600 mt-2">Your perfect pack for everyday use and walks in the forest. Stash
+                your
+                laptop (up to 15 inches) in t
+
+            </p>
+
+
+            <div class="flex  flex-col gap-[0.8rem] mt-3">
+                <button class=" bg-[#00c950] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+                <button class=" bg-[#e7000b] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem]  bg-white border-gray-600 ">
+
+            <img src="/images/shirt.png" alt="fan" class="">
+            <h1 class="text-center text-2xl font-bold">Mens Casual Premium
+
+            </h1>
+            <p class="text-center text-[blue] text-x mt-3">Mens Casual Premium
+
+
+            </p>
+            <p class="text-center text-gray-600 mt-3">Slim-fitting style, contrast raglan long sleeve, three-button
+                henley
+                placket, light weight & soft fa
+
+
+
+            </p>
+
+
+            <div class="flex  flex-col gap-[0.8rem] mt-3">
+                <button class=" bg-[#00c950] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+                <button class=" bg-[#e7000b] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem]  bg-white border-gray-600 ">
+            <img src="/images/jacket.png" alt="fan" class="">
+            <h1 class="text-center text-2xl font-bold">Mens Cotton Jacket
+
+            </h1>
+            <p class="text-center text-[blue] text-x mt-3">$55.99
+
+
+
+            </p>
+            <p class="text-center text-gray-600 mt-3">great outerwear jackets for Spring/Autumn/Winter, suitable for
+                many
+                occasions, such as working, hiki
+
+
+
+
+
+            </p>
+
+
+            <div class="flex  flex-col gap-[0.8rem] mt-3">
+                <button class=" bg-[#00c950] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+                <button class=" bg-[#e7000b] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem]  bg-white border-gray-600 ">
+            <img src="/images/shirtt.png" alt="fan" class="">
+            <h1 class="text-center text-2xl font-bold">Mens Casual Slim Fit
+
+
+            </h1>
+            <p class="text-center text-[blue] text-x mt-3">$15.99
+
+
+
+
+
+            </p>
+            <p class="text-center text-gray-600 mt-3">The color could be slightly different between on the screen and in
+                practice. / Please note that body
+
+
+
+
+
+
+
+            </p>
+
+
+            <div class="flex  flex-col gap-[0.8rem] mt-3">
+                <button class=" bg-[#00c950] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+                <button class=" bg-[#e7000b] p-[0.5rem] pl-[2rem] pr-[2rem] text-[white] rounded-[0.4rem]">Add TO
+                    Cart</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="bg-[#101828] pt-[3rem] mt-[3rem] ">
+
+
+
+        <div class="sm:flex sm:justify-evenly  sm:gap-[2rem] sm:flex-wrap  gap-[3rem] ml-[1rem]  ">
+
+            <div class="w-[20rem] mt-[2rem] ">
+                <h1 class="text-2xl text-white  font-bold mb-3 ">E-Commerce
+                </h1>
+                <p class="text-sm text-gray-400  w-[20rem] ">Your one-stop shop for the latest trends in fashion,
+                    electronics,
+                    and
+                    lifestyle.
+                    Shop
+                    smart. Shop
+                    easy.
+
+                </p>
+            </div>
+            <div class="w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-semibold mb-3">Quick Links</h1>
+
+
+                <ul class="text-white flex flex-col gap-[0.5rem]">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Dashboard</li>
+
+
+                </ul>
+            </div>
+
+
+
+
+            <div class="text-white w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-bold mb-3">Customer Service</h1>
+                <ul class="flex flex-col gap-[0.5rem]">
+                    <li>Privacy Policy
+                    </li>
+
+                    <li>Terms & Conditions
+                    </li>
+                    <li>Help & Support</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="w-[20rem] mt-[2rem]">
+                <h3 class="text-2xl text-white  font-semibold mb-4">Contact Us</h3>
+                <ul class="text-white flex flex-col gap-[0.7rem]">
+
+
+                    <li class="flex gap-[0.4rem] items-center"><i class="fa-solid fa-location-dot text-[#155dfc]"></i>
+                        Lahore,Pakistan</li>
+                    <li class="flex items-center gap-[0.4rem]"><i
+                            class="fa-solid fa-envelope text-[#155dfc]"></i>support@gmail.com</li>
+                    <li class="flex items-center gap-[0.4rem]"> <i class="fa-solid fa-phone text-[#155dfc]"></i>+92
+                        124989101
+                    </li>
+
+
+
+
+                    <div class=" flex gap-[0.5rem] mt-[0.5rem] ">
+                        <li><i class="fa-brands fa-facebook text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-instagram text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-twitter text-white text-[1.4rem] "></i></li>
+                        <li><i class="fa-brands fa-github text-white text-[1.4rem]"></i></li>
+
+                    </div>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400 pb-[3rem] ">
+            <p>© 2025 E-Commerce. All rights reserved.</p>
+        </div>
+
+
+
+
+    </footer>
+</body>
+<script src="wishlist.js"></script>
+
+
+</script>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="bg-[#101828]    p-[1rem] flex  justify-between items-center pl-[1rem] pr-[1rem]">
+
+
+
+        <div class="flex items-center gap-[0.5rem] ">
+            <img src="/images/wheel.png" alt="wheel" class="w-[3rem]">
+
+            <h1 class="text-white text-[2rem] text-[] font-bold">E-Commerce </h1>
+
+
+        </div>
+
+
+        <div class="">
+            <ul
+                class="  flex-row items-center text-[1.1rem]  text-white gap-[1rem] hidden sm:hidden  md:flex  xl:flex-3 2xl:flex ">
+
+                <li class="text-[blue]"> <a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div
+            class="flex flex-col gap-[1rem]  pr-[0.5rem] items-center sm:flex-row sm:items-center md:flex-row md:items-center xl:flex-row xl:items-center 2xl:flex-row 2xl:items-center">
+            <div>
+                <a href="icon.html"><i class="text-white text-[2rem]  fa-solid fa-heart-pulse"></i> </a>
+            </div>
+
+            <div>
+
+                <a href="table.html"> <i class=" text-[white] text-[2rem] fa-solid fa-cart-shopping"></i>
+                    </i>
+                </a>
+            </div>
+
+            <a href="dashboard.html"> <button
+                    class="text-[white]    sm:hidden hidden md:hidden xl:block 2xl:block bg-[#193cb8] p-[0.7rem] pl-[2rem] pr-[2rem] rounded-[0.4rem]">Admin
+                    Dashboard</button></a>
+
+            <!-- <i class=" text-[white] text-[2rem]  fa-solid fa-bars xl:invisible 2xl:invisible"></i> -->
+            <i class="  text-[white] text-[2rem] transition-all duration-300 hover:text-[#1f5ecc] hover:scale-105  fa-solid fa-bars xl:invisible 2xl:invisible"></i>
+
+        </div>
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+    <div class="flex  ">
+
+
+
+        <aside
+            class="hidden sm:block sm:bg-[#101828] sm:pb-[45rem] sm:w-[30rem] md:w-[25rem]  lg:w-[25rem] xl:w-[25rem] 2xl:w-[25rem] ">
+
+            <div class="flex items-center gap-[1rem] py-[1.5rem] pl-[1rem]">
+                <i class="fa-solid fa-grip text-white text-[1.5rem]"></i>
+                <h6 class="font-medium text-white text-2xl">Dashboard</h6>
+            </div>
+
+            <div class="flex items-center gap-[1rem] pl-[1rem]">
+                <a href="add.html"> <i class="fa-solid fa-bag-shopping text-white text-[1.5rem]"></i>
+                </a>
+
+                <a href="add.html" class="font-medium text-white text-2xl hover:underline">
+                    Add Product
+            </div>
+
+
+
+
+
+            <div class="flex items-center gap-[1rem] py-[1rem]">
+                <a href="view-product.html"> <i class="fa-solid fa-eye text-white text-[1.5rem]"></i>
+                </a>
+
+                <a href="view-product.html" class="font-medium text-white text-2xl hover:underline">
+                    View Product
+                </a>
+
+            </div>
+
+            <div class="flex items-center gap-[1rem] pl-[1rem]">
+                <i class="fa-solid fa-arrow-right-from-bracket text-white text-[1.5rem]"></i>
+                <h6 class="font-medium text-white text-2xl">Logout</h6>
+            </div>
+
+        </aside>
+        <div class=" w-full  mx-[3rem] my-[2rem]  h-[17rem] overflow-x-auto  shadow-lg bg-white ">
+
+
+            <div class="   overflow-x-auto shadow-lg p-6 ">
+                <table class="    sm:w-full border border-collapse border-gray-200 mt-[3rem] ">
+                    <caption class="text-center text-2xl font-bold mb-2">View Product</caption>
+
+                    <thead>
+                        <tr class="bg-[#d1d5dc]">
+                            <th class=" border border-gray-200  px-4 py-3 ">Image</th>
+                            <th class=" border border-gray-200  px-4 py-3 ">Title</th>
+                            <th class=" border border-gray-200  px-4 py-3  ">Price</th>
+                            <th class=" border border-gray-200  px-4 py-3 ">Quantity</th>
+                            <th class=" border border-gray-200  px-4 py-3 ">Sub Total</th>
+                            <th class=" border border-gray-200  px-4 py-3 ">Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="flex justify-center items-center px-4 py-3 border border-gray-200"><img
+                                    src="/images//shirt.png " alt="shirt" class="w-16 h-16"> </td>
+                            <td class="px-4 py-2 text-center border border-gray-200">Mens casual Premium</td>
+                            <td class="px-4 py-2 text-center border border-gray-200">$22.2</td>
+                            <td class="px-4 py-2 text-center border border-gray-200">3</td>
+                            <td class="px-4 py-2 text-center border border-gray-200">$66.90</td>
+
+                            <td class="px-4 py-2 text-center border border-gray-200"><button
+                                    class="bg-[#fb2c36] text-white text-center py-1 px-3 rounded">Remove</button></td>
+
+
+
+
+                        </tr>
+
+
+
+
+
+
+                    </tbody>
+
+                </Table>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="bg-[#101828] pt-[3rem] mt-[0rem]  ">
+
+
+
+        <div class="sm:flex sm:justify-center  sm:gap-[2rem] sm:flex-wrap ml-[2rem] gap-[3rem] sm:ml-[6rem]   ">
+
+            <div class="w-[20rem] mt-[2rem] ">
+                <h1 class="text-2xl text-white  font-bold mb-3 ">E-Commerce
+                </h1>
+                <p class="text-sm text-gray-400  w-[20rem] ">Your one-stop shop for the latest trends in fashion,
+                    electronics,
+                    and
+                    lifestyle.
+                    Shop
+                    smart. Shop
+                    easy.
+
+                </p>
+            </div>
+            <div class="w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-semibold mb-3">Quick Links</h1>
+
+
+                <ul class="text-white flex flex-col gap-[0.5rem]">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Dashboard</li>
+
+
+                </ul>
+            </div>
+
+
+
+
+            <div class="text-white w-[20rem] mt-[2rem]">
+                <h1 class="text-2xl text-white  font-bold mb-3">Customer Service</h1>
+                <ul class="flex flex-col gap-[0.5rem]">
+                    <li>Privacy Policy
+                    </li>
+
+                    <li>Terms & Conditions
+                    </li>
+                    <li>Help & Support</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="w-[20rem] mt-[2rem]">
+                <h3 class="text-2xl text-white  font-semibold mb-4">Contact Us</h3>
+                <ul class="text-white flex flex-col gap-[0.7rem]">
+
+
+                    <li class="flex gap-[0.4rem] items-center"><i class="fa-solid fa-location-dot text-[#155dfc]"></i>
+                        Lahore,Pakistan</li>
+                    <li class="flex items-center gap-[0.4rem]"><i
+                            class="fa-solid fa-envelope text-[#155dfc]"></i>support@gmail.com</li>
+                    <li class="flex items-center gap-[0.4rem]"> <i class="fa-solid fa-phone text-[#155dfc]"></i>+92
+                        124989101
+                    </li>
+
+
+
+
+                    <div class=" flex gap-[0.5rem] mt-[0.5rem] ">
+                        <li><i class="fa-brands fa-facebook text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-instagram text-white text-[1.4rem]"></i></li>
+                        <li><i class="fa-brands fa-twitter text-white text-[1.4rem] "></i></li>
+                        <li><i class="fa-brands fa-github text-white text-[1.4rem]"></i></li>
+
+                    </div>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400 pb-[3rem] ">
+            <p>© 2025 E-Commerce. All rights reserved.</p>
+        </div>
+
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
