@@ -20,12 +20,10 @@ function renderCart() {
   let totalElement = document.querySelector("#totalAmount");
   tbody.innerHTML = "";
 
+
   if (cartArray.length === 0) {
     tbody.innerHTML = `<tr><td colspan="6" class="text-center py-4 text-red-500">Your cart is empty
-        // <a href="index.html"
-        //   class="bg-[#155dfc] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
-        //   Back to Home
-        // </a>   </td></tr>   `;
+           </td></tr>   `;
     totalElement.textContent = "Total: $0";
     updateCartCount();
     return;
