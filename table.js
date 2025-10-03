@@ -89,7 +89,7 @@
 
 
 
-let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+// let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
 let wishArray = JSON.parse(localStorage.getItem("wishlist")) || [];
 
 function updateCartCount() {
