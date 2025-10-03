@@ -11,7 +11,7 @@ function updateCartCount() {
 function updateWishCount() {
   const wishCount = document.getElementById("wishCount");
   if (wishCount) {
-    wishCount.textContent = wishArray.length; 
+    wishCount.textContent = wishArray.length;
   }
 }
 
@@ -21,8 +21,8 @@ function renderCart() {
   tbody.innerHTML = "";
 
   if (cartArray.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-4 text-red-500">Your cart is empty 
-        <a href="index.html" 
+    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-4 text-red-500">Your cart is empty
+        <a href="index.html"
           class="bg-[#155dfc] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
           Back to Home
         </a></td></tr>`;
@@ -85,7 +85,7 @@ function renderCart() {
   updateCartCount();
   updateWishCount();
 }
-
+<a href="index.html">back to home</a>
 renderCart();
 updateCartCount();
 updateWishCount();
