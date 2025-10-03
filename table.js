@@ -58,7 +58,7 @@ function renderCart() {
         </button>
       </td>
     `;
-    tbody.append(tr);~
+    tbody.append(tr);
   });
 
   totalElement.textContent = `Total: $${grandTotal.toFixed(2)}`;
