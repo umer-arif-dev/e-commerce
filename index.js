@@ -28,7 +28,7 @@ function renderProducts(products) {
   products.forEach((product) => {
     let script = document.createElement("div");
     script.className =
-      "w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem] bg-white border-gray-600";
+      "w-[30rem] sm:w-[20rem] rounded-xl shadow-lg p-[2rem] mb-[1rem] bg-white border-gray-600 ";
     script.innerHTML = `
        <img src="${
          product.image

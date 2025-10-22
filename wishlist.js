@@ -49,6 +49,7 @@ function renderWishlist() {
         <button class="bg-[#e7000b] hover:bg-green-700  hover:scale-105 transition-all duration-300 p-[0.5rem] text-white rounded-[0.4rem] removeFromWishlist">Remove</button>
 
       </div>
+      
     `;
 
     container.append(div);
